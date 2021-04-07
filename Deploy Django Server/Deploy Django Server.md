@@ -186,9 +186,12 @@ sudo systemctl restart nginx
 ```
 
 ## Verify That Your Website Is Accessable
-In your browser, navigate to your domain
+In your browser, navigate to your domain. You should see the same Welcome Page as before.
 
 ## Configure SSL using Let's Encrypt CertBot
+
+![](images/lets_encrypt_logo.png)
+
 We will set up our Nginx proxy to serve data over HTTPS by installing an SSL cert from Let's Encrypt. Let's Encrypt provides a useful program, CertBot, to help us.
 
 We must first allow HTTPS traffic through the `ufw` firewall. We also delete the leftover (and now redundant) allowance for Nginx.
