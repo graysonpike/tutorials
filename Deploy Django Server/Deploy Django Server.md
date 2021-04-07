@@ -4,6 +4,9 @@ Grayson Pike, April 2021
 ## Summary
 This tutorial covers the deployment of a blank Django project to a publicly accessible server. This includes using a domain name and configuring SSL with Let's Encrypt. Written for Ubuntu 18 or 20, this tutorial uses Gunicorn to process requests, and Nginx as a reverse proxy. Gunicorn and Nginx communicate via a socket. The Gunicorn service and socket are managed by Systemd.
 
+## Audience
+This tutorial is intended for moderately experienced web developers who have little or no experience deploying a website. This tutorial assumes little to no prior experience with Django.
+
 ## Requirements
 - DigitalOcean Droplet or other remote Ubuntu 18.04+ server
 - A domain name
@@ -211,3 +214,14 @@ sudo certbot --nginx
 ```
 
 You should now be able to access your website through HTTPS. Congratulations! You can now devlop your Django website, then pull changes on your server when necessary. Make sure to remember to migrate your database, collect static files, and restart the Gunicorn service when you pull new changes.
+
+## Further Reading, Similar Articles
+You can find further reading from the following articles:
+
+
+
+### [DigitalOcean - How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04)
+This article covers much of the same content covered here, minus the Django Setup, Domain name, and SSL configuration.
+
+### [GitConnected - How to Deploy a Django Web App on DigitalOcean Ubuntu 20.04 Server](https://levelup.gitconnected.com/how-to-deploy-a-django-web-app-on-digitalocean-ubuntu-20-04-server-a3c082d5294d)
+Same as above.
