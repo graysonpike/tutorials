@@ -215,10 +215,13 @@ sudo certbot --nginx
 
 You should now be able to access your website through HTTPS. Congratulations! You can now devlop your Django website, then pull changes on your server when necessary. Make sure to remember to migrate your database, collect static files, and restart the Gunicorn service when you pull new changes.
 
+## Potential Publishers
+- DigitalOcean (if they didn't already have a similar article)
+- TutorialsPoint
+- RealPython
+
 ## Further Reading, Similar Articles
 You can find further reading from the following articles:
-
-
 
 ### [DigitalOcean - How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04)
 This article covers much of the same content covered here, minus the Django Setup, Domain name, and SSL configuration.
